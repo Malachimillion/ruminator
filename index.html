@@ -10,8 +10,8 @@
 <style>
 body { 
       background-image: url('Photos/background.jpg'); 
-      background-size: cover; 
-    } @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+      background-size: cover; {font-family: "Lato", sans-serif}
+    }
 </style>
 </head>
 <body>
@@ -33,8 +33,8 @@ body {
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 </div>
 
 <!-- Page content -->
@@ -43,22 +43,23 @@ body {
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <img src="Photos/Logo.png" width="600" height="600">
-    <p style="font-size:2vw" class="w3-justify">A collaboration of artists performing all your favorites from a variety of musical influences and genres. If you love Classic Rock, Country, Southern Rock from 60's thru today, you will love Ruminator! "Think about it!"</p>
+    <p class="w3-justify">A collaboration of artists performing all your favorites from a variety of musical influences and genres. If you love Classic Rock, Country, Southern Rock from 60's thru today, you will love Ruminator! "Think about it!"</p>
     <div class="w3-row w3-padding-64" id="band">
-      <h1 style="font-size:5vw" class="w3-wide w3-center"><u>MEET THE BAND!</u></h1>
+      <h1 class="w3-wide w3-center"><u>MEET THE BAND!</u></h1>
      <br></br>
-        <img src="Photos/Jenna.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Jenna Brookens</u></p> <p style="font-size:1.8vw"> Jenna is a mild mannered gal by day, brings the cutting edge down and dirty country and rock vocal leads the likes of Joplin and Gretchen Wilson. </p>     <br></br>     <br></br> <br></br> <br></br> 
-        <img src="Photos/Justin.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Justin Brookens</u></p> <p style="font-size:1.8vw"> Justin brings the smooth steady pulse on the bass and adds much to the vocal mix including some top-shelf falsetto and straight up great leads and harmony!</p>     <br></br>        <br></br><br></br> <br></br> 
-        <img src="Photos/Sean.jpg" style="float:left" class="w3-center" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Sean Stewart</u></p> <p style="font-size:1.8vw"> Hanging out in the back, Sean has been drumming since his youth.  You can hear him rockin the beat, adding harmonies and leading some of your favorites as well.  A lifetime Lincolnite, Sean enjoys all types of music, hunting, and spending time with his family!</p> <br></br> <br></br> <br></br> 
-        <img src="Photos//Malachi.jpeg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Malachi Million</u></p> <p style="font-size:1.8vw"> Having played guitar since 14, Dr. Malachi brings a plethora of experience from playing in jazz ensembles, performing solo, guitar ensembles, metal, funk, blues bands and worship arts.  He's a million dollar man joining in our Ruminator band.</p>
+        <img src="Photos/Jenna.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Jenna Brookens</u></p> <p> Jenna is a mild mannered gal by day, brings the cutting edge down and dirty country and rock vocal leads the likes of Joplin and Gretchen Wilson. </p>     <br></br>     <br></br> <br></br> <br></br> <br></br> 
+        <img src="Photos/Justin.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Justin Brookens</u></p> <p> Justin brings the smooth steady pulse on the bass and adds much to the vocal mix including some top-shelf falsetto and straight up great leads and harmony!</p>     <br></br>        <br></br><br></br> <br></br> <br></br> 
+        <img src="Photos/Sean.jpg" style="float:left" class="w3-center" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Sean Stewart</u></p> <p> Hanging out in the back, Sean has been drumming since his youth.  You can hear him rockin the beat, adding harmonies and leading some of your favorites as well.  A lifetime Lincolnite, Sean enjoys all types of music, hunting, and spending time with his family!</p> <br></br> <br></br> <br></br><br></br>  <br></br> 
+        <img src="Photos//Malachi.jpeg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Malachi Million</u></p> <p> Having played guitar since 14, Dr. Malachi brings a plethora of experience from playing in jazz ensembles, performing solo, guitar ensembles, metal, funk, blues bands and worship arts.  He's a million dollar man joining in our Ruminator band.</p>
       </div>
 
 
 
   <!-- The Tour Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="photos">
-    <h1 style="font-size:6vw" class="w3-wide w3-center"><u>Photos</u></h1>
+    <h1 class="w3-wide w3-center"><u>Photos</u></h1>
       <!-- Grid for photos -->
     <div class="w3-row-padding w3-center">
         <img src="Photos/live 1.jpg" alt="headshot 2" style="width:100%">
@@ -71,8 +72,8 @@ body {
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h1 style="font-size:6vw" class="w3-wide w3-center"><u>Contact</u></h1>
-    <p style="font-size:2vw">Want to learn more about Ruminator, their music, and their available dates? Don't hesitate to get in touch!</p>
+    <h1 class="w3-wide w3-center"><u>Contact</u></h1>
+    <p> Want to learn more about Ruminator, their music, and their available dates? Don't hesitate to get in touch!</p>
         <i class="fa fa-map-marker" style="width:30px"></i> Lincoln, NE<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: Ruminatorsband@gmail.com<br>
       </div>
