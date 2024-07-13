@@ -8,7 +8,24 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {background-image: url('Photos/background.jpg'); background-size: cover;} {font-family: "Lato", sans-serif; font-size: 8vw} h1{font-size: 8vw} p{font-size: 3vw}
+body {background-image: url('Photos/background.jpg'); background-size: cover;} {font-family: "Lato", sans-serif; font-size: 8vw} h1{font-size: 6vw} p{font-size: 2vw}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
@@ -26,12 +43,12 @@ body {background-image: url('Photos/background.jpg'); background-size: cover;} {
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
+
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
 </div>
 
 <!-- Page content -->
@@ -41,15 +58,28 @@ body {background-image: url('Photos/background.jpg'); background-size: cover;} {
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <img src="Photos/Logo.png" style="width:auto;">
-    <h1 class="w3-justify">A collaboration of artists performing all your favorites from a variety of musical influences and genres. If you love Classic Rock, Country, Southern Rock from 60's thru today, you will love Ruminator! "Think about it!"</h1>
+    <img src="Photos/Logo.png" style="width:50%;">
+    <p class="w3-justify">A collaboration of artists performing all your favorites from a variety of musical influences and genres. If you love Classic Rock, Country, Southern Rock from 60's thru today, you will love Ruminator! "Think about it!"</p>
     <div class="w3-row w3-padding-64" id="band">
       <h1 class="w3-wide w3-center" style="font-size:6vw"><u>MEET THE BAND!</u></h1>
      <br></br>
-        <img src="Photos/Jenna.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Jenna Brookens</u></p><p style="font-size:2vw">Jenna is a mild mannered gal by day, brings the cutting edge down and dirty country and rock vocal leads the likes of Joplin and Gretchen Wilson. </p>     <br></br>     <br></br> <br></br> <br></br> <br></br> 
-        <img src="Photos/Justin.jpg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Justin Brookens</u></p> <p style="font-size:2vw"> Justin brings the smooth steady pulse on the bass and adds much to the vocal mix including some top-shelf falsetto and straight up great leads and harmony!</p>     <br></br>        <br></br><br></br> <br></br> <br></br> 
-        <img src="Photos/Sean.jpg" style="float:left"  width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Sean Stewart</u></p> <p style="font-size:2vw"> Hanging out in the back, Sean has been drumming since his youth.  You can hear him rockin the beat, adding harmonies and leading some of your favorites as well.  A lifetime Lincolnite, Sean enjoys all types of music, hunting, and spending time with his family!</p> <br></br> <br></br> <br></br><br></br>  <br></br> 
-        <img src="Photos//Malachi.jpeg" style="float:left" width="400" height="400" class="w3-round w3-margin-bottom"><p style="font-size:3vw"><u>Malachi Million</u></p> <p style="font-size:2vw"> Having played guitar since 14, Dr. Malachi brings a plethora of experience from playing in jazz ensembles, performing solo, guitar ensembles, metal, funk, blues bands and worship arts.  He's a million dollar man joining in our Ruminator band.</p>
+      <div class="container">
+        <p><u>Jenna Brookens</u></p>
+        <img src="Photos/Jenna.jpg" alt="jenna" style="width:50%;">
+          <p>Jenna is a mild mannered gal by day, brings the cutting edge down and dirty country and rock vocal leads the likes of Joplin and Gretchen Wilson.</p>      <div class="container">
+      <div class="container">
+        <p><u>Justin Brookens</u></p>
+       <img src="Photos/Justin.jpg" alt="Justin" style="width:50%;">
+          <p>Justin brings the smooth steady pulse on the bass and adds much to the vocal mix including some top-shelf falsetto and straight up great leads and harmony!</p>
+     <div class="container">
+        <p><u>Sean Stewart</u></p>
+      <img src="Photos/Sean.jpg" alt="sean" style="width:50%;">
+          <p>Hanging out in the back, Sean has been drumming since his youth. You can hear him rockin the beat, adding harmonies and leading some of your favorites as well. A lifetime Lincolnite, Sean enjoys all types of music, hunting, and spending time with his family!</p>
+     <div class="container">
+         <p><u>Malachi Million</u></p>
+      <img src="Photos/Malachi.jpeg" alt="malachi" style="width:50%;">
+              <p>Having played guitar since 14, Dr. Malachi brings a plethora of experience from playing jazz, metal, funk, blues bands and worship arts.  He's a million dollar man joining in our Ruminator band.</p>
+        </div>
       </div>
 
 
