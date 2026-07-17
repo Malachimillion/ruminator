@@ -48615,6 +48615,7 @@ a.u-link.u-text-hover-color-var.hover {
 .u-header .u-nav-1 {
   font-family: "Caveat Brush";
   font-size: 2.5rem;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-link-2 {
@@ -48637,10 +48638,6 @@ a.u-link.u-text-hover-color-var.hover {
   .u-header .u-menu-1 {
     width: auto;
     margin-top: -50px;
-  }
-
-  .u-header .u-nav-1 {
-    letter-spacing: normal;
   }
 }
 
