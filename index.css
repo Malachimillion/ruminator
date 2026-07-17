@@ -148,10 +148,6 @@
 }
 
 @media (max-width: 575px) {
-   .u-section-2 {
-    background-size: auto;
-  }
-
   .u-section-2 .u-sheet-1 {
     min-height: 574px;
   }
