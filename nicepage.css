@@ -48609,11 +48609,12 @@ a.u-link.u-text-hover-color-var.hover {
 }
 
 .u-header .u-menu-1 {
-  margin: -36px 0 22px auto;
+  margin: -50px auto 36px;
 }
 
 .u-header .u-nav-1 {
-  font-size: 1rem;
+  font-family: "Caveat Brush";
+  font-size: 2.5rem;
 }
 
 .u-header .u-nav-link-2 {
@@ -48635,7 +48636,7 @@ a.u-link.u-text-hover-color-var.hover {
 
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -36px;
+    margin-top: -50px;
   }
 
   .u-header .u-nav-1 {
